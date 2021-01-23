@@ -12,10 +12,13 @@
 
 ```  curl "https://towardsdatascience.com/introduction-to-apache-spark-207a479c3001" -o "data.txt" ```
 
-## Command used to count unique words in a squential order:
+## Command used to count unique words in a sequential order:
 
 ``` tr ' ' '\12' < returnedfile | sort | uniq -c | sort -nr > result.txt ```  
 - ``` tr ``` tranforms or deletes characters from strings  
 - ``` sort ``` sorts  the contents of a file in a particular order  
 - ``` uniq -c ```  returns the number of times a word is repeated  
 - ``` sort -nr ``` option -n sorts numnerically and option -r sorts in reverse order  
+
+## Command used to display top 5 unique words
+```head-5 result.txt ```
